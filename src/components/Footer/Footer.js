@@ -1,7 +1,7 @@
 import './Footer.css';
 import { Container,Row } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 function Footer(){
     return(
     <>
