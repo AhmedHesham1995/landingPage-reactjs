@@ -1,0 +1,158 @@
+
+.box {
+    padding: 20px 0;
+    width: 95%;
+}
+
+.box:hover svg{
+    color: #ffffff;
+    background-color: var(--sec);;
+    transition: .4s all ;
+}
+
+.box:hover{
+   transition: all .4s ease-in-out;
+   transform: translateY(-4%);
+}
+
+.box:not(:hover){
+    transition: all .4s ease-in-out;
+    transform: translateY(4%);
+}
+.services h3{
+    margin: 20px 0;
+}
+
+.box p{
+    color: #727070;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.box svg{
+    color: var(--sec);;
+    font-size: 35px;
+    padding: 20px;
+    height: 40px;
+    width: 40px;
+    background-color:#ffffff;
+    border-radius: 50%;
+    box-shadow: var(--sec) 0px 0px 10px -3px;
+}
+
+.sec-services{
+    background-color:#f8f9fa;
+    padding: 70px 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.sec-services img{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.sec-services h3{
+    
+    padding-bottom: 20px;
+    line-height: 1.5;
+    width: 470px;
+}
+
+.sec-services p{
+    color: #727070;
+    line-height: 1.8;
+    width: 470px;
+    padding-bottom: 10px;
+}
+
+.sec-services ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+.sec-services li{
+    position: relative;
+    margin-left: 20px;
+    color: #727070;
+    margin-top: 15px;
+}
+
+.sec-services li::before{
+    content: '';
+    background-color: var(--sec);;
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 9px;
+    left: -18px;
+}
+
+.sec-services button{
+    display: block;
+    margin-top: 40px;
+    color: #fff;
+    background-color: var(--sec);
+    outline: none;
+    border: 1px solid var(--sec);
+    border-radius: 5px;
+    padding: 8px 17px ;
+    margin-bottom: 30px;
+}
+
+.sec-services button:hover,.end-services button:hover{
+    transform: translateY(-4px);
+    transition: transform .4s ease-in-out;
+}
+
+.sec-services button:not(:hover),.end-services button:not(:hover){
+    transform: translateY(4px);
+    transition: transform .4s ease-in-out;
+}
+
+.sec-services svg{
+    margin-left: 8px;
+    font-size: 12px;
+}
+
+.end-services{
+    text-align: center;
+    background: url('../../assets/endServices.jpg') no-repeat center;
+    font-family: 'Sofia Sans', sans-serif;
+    
+}
+
+.end-services .overlay{
+    background-color:var(--main);
+    opacity: .9;
+    width: 100%;
+    max-width: 100%;
+    height: inherit;
+    text-align: center;
+}
+
+.end-services h3{
+    margin-bottom: 40px;
+    color: #fff;
+    padding-top: 180px;
+    font-size: 40px;
+}
+
+.end-services p{
+    color: #c6c6c9;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+.end-services button{
+    margin-bottom: 180px;
+    color: rgb(12, 12, 12);
+    background-color: #ffffff;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 8px 17px ;
+    
+}

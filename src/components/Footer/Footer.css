@@ -1,0 +1,67 @@
+footer{
+    background-color: #272a33;
+    font-weight: lighter;
+    padding: 60px 0;
+    font-family: 'Sofia Sans', sans-serif;
+}
+footer h4{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer li, footer p{
+   color: rgb(165, 164, 164);
+   font-size: 14px; 
+   font-weight: 400;
+  
+}
+
+footer p{
+    line-height: 2.2;
+}
+
+footer li{
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+footer form{
+    background-color: #2e313a;
+    padding: 10px 20px;
+   
+}
+
+footer form input{
+    outline: none;
+    background-color: #2e313a;
+    color: rgb(165, 164, 164);
+    border: 0;
+}
+
+footer form svg{
+    color: #fff;
+    background-color: #2e313a;
+    font-size: 20px;
+    text-align: right;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    
+}
+
+.foot{
+    background-color: #2e313a;
+    height: 90px;
+    text-align: center;
+}
+
+.foot span{
+    color: rgb(165, 164, 164);
+    padding-top: 30px;
+    display: block;
+}

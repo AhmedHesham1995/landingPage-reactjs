@@ -1,0 +1,58 @@
+.blog{
+    background-color: #f8f9fa;
+    padding-bottom: 50px;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+
+.blog-content .blog-card button:hover{
+    transform: translateY(-4px);
+    transition: transform .4s ease-in-out;
+}
+
+.blog-content .blog-card button:not(hover){
+    transform: translateY(4px);
+    transition: transform .4s ease-in-out;
+}
+
+.blog-content .blog-card{
+    margin-bottom: 30px;
+}
+
+.blog-content .blog-card:hover{
+    transition: all .3s ease-in-out;
+    transform: translateY(-1.5%);
+ }
+ 
+ .blog-content .blog-card:not(:hover){
+     transition: all .3s ease-in-out;
+     transform: translateY(1.5%);
+ }
+
+
+.blog-content .blog-card img{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.blog-content h6{
+    color: #727070;
+    margin: 17px 0;
+} 
+
+.blog-content p{
+    color: #727070;
+    line-height: 1.6;
+}
+
+.blog-content span{
+    font-weight: 500;
+    color: var(--sec);
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.blog-content span:hover{
+    color: #000;
+}
