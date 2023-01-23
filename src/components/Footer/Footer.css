@@ -36,11 +36,22 @@ footer form{
    
 }
 
-footer form input{
+footer .footer-input{
     outline: none;
     background-color: #2e313a;
     color: rgb(165, 164, 164);
-    border: 0;
+    border: 1px solid #2e313a;
+    border-radius: 3px;
+}
+
+footer .footer-input:focus{
+    outline: none;
+    background-color: #2e313a;
+    color: rgb(165, 164, 164);
+    border: 1px solid #2e313a;
+    outline: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
 }
 
 footer form svg{
@@ -65,3 +76,4 @@ footer form svg{
     padding-top: 30px;
     display: block;
 }
+

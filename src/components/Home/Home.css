@@ -31,43 +31,8 @@ header p{
     line-height: 1.8;
 }
 
-header form{
-    margin: 25px 0px;
-    height: 60px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    border-radius: 30px;
-    width: 570px;
-    margin-left: 370px;
-}
-
-header form input{
-    background-color: #fff;
-    width: 400px;
-    border-radius: 30px;
-    text-align: left;
-    color: black;
-    font-size: 16px;
-    padding: 7px;
-    border: 1px solid #fff;
-}
-
-header form button{
-    background-color: var(--sec);
-    border: 1px solid var(--sec);
-    width: 140px;
-    height: 45px;
-    border-radius: 30px;
-    text-align: center;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin-top: 7px;
-}
-
 header .overlay{
-    /* background-color: #5c2a89; */
+   background-color: #5c2a89;
     background-color: var(--main);
     opacity: .9;
     width: 100%;
@@ -76,4 +41,95 @@ header .overlay{
     text-align: center;
     margin: -39px 0px 25px 0;
 }
+ 
 
+
+.home-form{
+    margin-top: 50px !important;
+    background-color: #fff;
+    width: 40%;
+    margin: auto;
+    height: 60px;
+    border-radius: 30px;
+}   
+
+
+.home-btn{
+    background-color: var(--sec) !important;
+    margin-top: 5px !important;
+    float: right;
+    margin-right: 10px;
+    border-radius: 30px !important;
+    padding: 10px 40px !important;
+    border: 1px solid var(--sec) !important;
+    letter-spacing: 2px;
+    font-size: 35px;
+}
+
+.home-btn:hover{
+    transform: translateY(-3px);
+    transition: transform .4s ease-in-out;
+}
+
+.home-btn:not(hover){
+    transform: translateY(3px);
+    transition: transform .4s ease-in-out;
+} 
+
+.home-input{
+    border: 1px solid #fff !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
+}
+    
+.home-input:focus{
+    outline: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+}
+
+@media screen and (max-width:664px) {
+    .home-form{
+        background: transparent;
+    }
+
+    .home-btn{
+        
+        width: inherit !important;
+        margin-top: 25px !important;
+        margin-left: 0 !important;
+        margin-right: 17px !important;
+    }
+
+    .home-input{
+        width: inherit !important;
+        margin: auto 0 !important;
+        border-radius: 30px !important;
+        padding: 10px 40px !important;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:412px) {
+    .home-form{
+        background: transparent;
+    }
+
+    .home-btn{
+        width: inherit;
+        margin: 15px auto !important;;
+        letter-spacing: 0;
+        font-size: 15px !important;
+        text-align: center;
+    }
+
+    .home-input{
+        width: inherit;
+        font-size: 15px !important;
+        padding: 10px 0 !important;
+    }
+
+    .home{
+        margin-top: 40px !important;
+    }
+}

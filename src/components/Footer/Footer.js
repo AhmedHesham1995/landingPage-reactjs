@@ -1,7 +1,5 @@
 import './Footer.css';
-import { Container,Row } from 'react-bootstrap';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { Container,Row,Form } from 'react-bootstrap';
 function Footer(){
     return(
     <>
@@ -40,10 +38,12 @@ function Footer(){
                             <p>
                                 In an ideal world this text wouldn’t exist, a client would acknowledge the importance of having web copy before the design starts.
                             </p>
-                            <form>
+                            {/* <form>
                                 <input type="email" placeholder="Email"/>
-                                {/* <FontAwesomeIcon icon={ faPaperPlane } /> */}
-                            </form>
+                            </form> */}
+                            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                <Form.Control className='footer-input' type="email" placeholder="Email" />
+                            </Form.Group>
                         </ul>
                     </div>
                 </Row>

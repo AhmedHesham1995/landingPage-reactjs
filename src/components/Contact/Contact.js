@@ -1,5 +1,5 @@
 import './Contact.css';
-import { Container,Row } from 'react-bootstrap';
+import { Container,Row,Form, Button } from 'react-bootstrap';
 function Contact(){
     return(
         <>
@@ -35,7 +35,7 @@ function Contact(){
                                  
                             </div>
                             <div className='col-lg-8'>
-                                <form>
+                                {/* <form>
                                     <div className='above'>
                                         <input id='name' type="text" placeholder="Your name*"/>
                                         <input id='email' type="email" placeholder="Your email*"/>
@@ -46,7 +46,18 @@ function Contact(){
                                     </div>
                                     
                                 </form>
-                                <button type='submit'>Send message</button>
+                                <button type='submit'>Send message</button> */}
+                                <Form className='contact-form'>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Control type="input" placeholder="your name*" />
+                                        <Form.Control type="email" placeholder="your email*" />
+                                        <Form.Control type="input" placeholder="your subject.." />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                        <Form.Control as="textarea" id='form-text' placeholder='Your message...' rows={3} />
+                                    </Form.Group>
+                                    <Button className='contact-btn'>Send message</Button>
+                                </Form>
                             </div>
                         </Row>
                     </Container>
